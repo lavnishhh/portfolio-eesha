@@ -1,0 +1,16 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+.feature .header{
+    @apply text-4xl
+}
+
+.feature .icon > svg{
+    @apply size-3.5 ms-1
+}
+
+.paragraph-hide{
+    @apply h-20 overflow-hidden bg-gradient-to-b from-black to-white/10 text-transparent bg-clip-text
+}
