@@ -7,6 +7,7 @@ function ExperiencePage() {
             "title": "Business HR Team Lead",
             "date": "June 2024 - Nov 2024",
             "company": "CorpStage",
+            "certificate": "certificates/corpstage.pdf",
             "description": "Led end-to-end recruitment processes, including sourcing, screening, and onboarding top talent. Developed and implemented effective performance evaluation systems to foster employee growth, spearheaded a university relations initiative, successfully connecting with over 300 in the USA and establishing potential collaborations between universities in North America and South Asia. Recognized as a recommended speaker at the UNDP Movers Program for sharing expertise in business integrity and leadership skills."
         },
         {
@@ -36,7 +37,7 @@ function ExperiencePage() {
             <div className="ms-5 mt-16">
                 <ol className="relative border-s border-gray-200" id="experiences-list">
                     {data.map((experience) => {
-                        return <ExperienceComponent key={experience.title} title={experience.title} date={experience.date} company={experience.date} description={experience.description}></ExperienceComponent>
+                        return <ExperienceComponent key={experience.title} title={experience.title} date={experience.date} company={experience.date} description={experience.description} url={experience.certificate}></ExperienceComponent>
                     })}
                 </ol>
             </div>
@@ -52,7 +53,7 @@ function ExperienceComponent(props) {
     const [collapse, setCollapse] = useState(true);
 
     return <li className="mb-10 ms-6">
-        <span className="absolute flex items-center justify-center w-6 h-6 bg-primary-200 rounded-full -start-3 ring-8 ring-white">
+        <span className="absolute flex items-center justify-center w-6 h-6 bg-primary-200 rounded-full -start-3 ring-8 ring-primary-200">
             <svg className="w-2.5 h-2.5 text-primary-800" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
                 <path d="M20 4a2 2 0 0 0-2-2h-2V1a1 1 0 0 0-2 0v1h-3V1a1 1 0 0 0-2 0v1H6V1a1 1 0 0 0-2 0v1H2a2 2 0 0 0-2 2v2h20V4ZM0 18a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V8H0v10Zm5-8h10a1 1 0 0 1 0 2H5a1 1 0 0 1 0-2Z" />
             </svg>
@@ -73,12 +74,12 @@ function ExperienceComponent(props) {
                 }
             </label>
         </div>
-        <a href="#" className="inline-flex items-center px-4 py-2 text-sm font-medium text-gray-900 bg-white border border-gray-200 rounded-lg hover:bg-gray-100 hover:text-primary-700 focus:z-10 focus:ring-4 focus:outline-none focus:ring-gray-100 focus:text-primary-700">
+        {url && <a href={`${import.meta.env.BASE_URL}${url}`} className="inline-flex items-center px-4 py-2 text-sm font-medium text-gray-900 bg-primary-200 border border-primary-200 hover:border-primary-500 rounded-lg hover:bg-white hover:text-primary-700 focus:z-10 focus:ring-4 focus:outline-none focus:ring-gray-100 focus:text-primary-700">
             <svg className="w-3.5 h-3.5 me-2.5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
                 <path d="M14.707 7.793a1 1 0 0 0-1.414 0L11 10.086V1.5a1 1 0 0 0-2 0v8.586L6.707 7.793a1 1 0 1 0-1.414 1.414l4 4a1 1 0 0 0 1.416 0l4-4a1 1 0 0 0-.002-1.414Z" />
                 <path d="M18 12h-2.55l-2.975 2.975a3.5 3.5 0 0 1-4.95 0L4.55 12H2a2 2 0 0 0-2 2v4a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2v-4a2 2 0 0 0-2-2Zm-3 5a1 1 0 1 1 0-2 1 1 0 0 1 0 2Z" />
             </svg>Certificate
-        </a>
+        </a>}
     </li>;
 }
 

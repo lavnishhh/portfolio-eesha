@@ -2,6 +2,7 @@ import React from 'react'
 import LandingPage from './landing_page';
 import ExperiencePage from './experience_page';
 import ProjectsPage from './projects_page';
+import TechnicalPage from './technichal_page';
 
 function HomeScreen() {
     return <>
@@ -13,6 +14,7 @@ function HomeScreen() {
         <LandingPage></LandingPage>
         <ExperiencePage></ExperiencePage>
         <ProjectsPage></ProjectsPage>
+        <TechnicalPage></TechnicalPage>
     </>;
 }
 
