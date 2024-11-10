@@ -29,11 +29,6 @@ function TechnicalPage() {
                 "issuer": "IBM",
                 "certificate": "design_thinking"
             },
-            {
-                "title": "JavaScript Essentials I",
-                "issuer": "Cisco | Netacad",
-                "certificate": "javascript"
-            }
         ]
     }
 

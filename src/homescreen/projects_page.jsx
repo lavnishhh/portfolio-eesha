@@ -129,8 +129,8 @@ function ProjectCardComponent(props) {
 
     return <div key={event.title} className="mb-2 md:mb-8 block bg-primary-200 max-w-sm border border-gray-200 rounded-lg shadow hover:bg-gray-100 break-inside-avoid">
     {event.image && <img className="rounded-t-lg" src={`${import.meta.env.BASE_URL}/${event.image}`}></img>}
-    <h5 className="md:text-2xl pt-3 px-3 md:pt-6 md:px-6 font-bold tracking-tight text-primary-800">{event.title}</h5>
-    <p className="mt-2 pb-3 md:pb-6 font-normal text-gray-700 hidden md:block px-3 md:px-6">{event.description}</p>
+    <h5 className="md:text-2xl py-3 px-3 md:pt-6 md:px-6 font-bold tracking-tight text-primary-800">{event.title}</h5>
+    <p className="pb-3 md:pb-6 font-normal text-gray-700 hidden md:block px-3 md:px-6">{event.description}</p>
     {event.certificate && <a href={`${import.meta.env.BASE_URL}/${event.certificate}`} className="inline-flex items-center ms-3 md:ms-6 mb-3 md:mb-6 px-3 py-2 text-sm font-medium text-center text-white bg-primary-700 rounded-lg hover:bg-primary-800 focus:ring-4 focus:outline-none focus:ring-primary-300">
         Certificate
         <svg className="rtl:rotate-180 w-3.5 h-3.5 ms-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">

@@ -11,7 +11,7 @@ function LandingPage() {
     <div className="flex items-center justify-center">
       <div className="grid grid-cols-2 gap-10">
         <div className="feature">
-          <p className="header">3</p>
+          <p className="header">4</p>
           <div>Professional Experiences</div>
           <a className="text-primary-500 text-sm inline-flex items-center icon">
             Know more
@@ -21,7 +21,7 @@ function LandingPage() {
           </a>
         </div>
         <div className="feature">
-          <p className="header">3</p>
+          <p className="header">10</p>
           <div>HR Projects</div>
           <a className="text-primary-500 text-sm inline-flex items-center icon">
             Know more

@@ -3,6 +3,7 @@ import LandingPage from './landing_page';
 import ExperiencePage from './experience_page';
 import ProjectsPage from './projects_page';
 import TechnicalPage from './technichal_page';
+import Extracurricular from './extcure';
 
 function HomeScreen() {
     return <>
@@ -15,6 +16,7 @@ function HomeScreen() {
         <ExperiencePage></ExperiencePage>
         <ProjectsPage></ProjectsPage>
         <TechnicalPage></TechnicalPage>
+        <Extracurricular></Extracurricular>
     </>;
 }
 
