@@ -96,10 +96,12 @@ function ProjectsPage() {
         ,
             {
                 "title": "Fun Friday Program",
+                "image": "images/fun_friday.jpeg",
                 "description": "Driving Performance Through Positive Culture: Led a strategic HR initiative to create a more engaged and productive workforce. The monthly program included team-building activities, knowledge-sharing sessions, and performance feedback. By fostering a positive work environment and promoting open communication, this initiative directly contributed to increased employee satisfaction, improved team performance, and achieved organizational goals."
             },
             {
                 "title": "Business Integrity Workshop",
+                "image": "images/business_integrity.jpeg",
                 "description": "Led a transformative workshop aimed at fostering integrity and ethical behavior within the organization, in collaboration with the UNDP Movers Program and LCOY Indonesia. Delivered an impactful presentation on corporate ethics, transparency, and effective communication, engaging employees and interns alike. Designed interactive activities, including the 'Green Grid Scramble,' to enhance learning and reinforce key concepts. This initiative strengthened CorpStage’s dedication to ethical practices and empowered participants to make principled decisions, aligning with the company's HR commitment to cultivating a responsible and values-driven workplace culture."
             },
             {
@@ -131,7 +133,7 @@ function ProjectCardComponent(props) {
     {event.image && <img className="rounded-t-lg" src={`${import.meta.env.BASE_URL}/${event.image}`}></img>}
     <h5 className="md:text-2xl py-3 px-3 md:pt-6 md:px-6 font-bold tracking-tight text-primary-800">{event.title}</h5>
     <p className="pb-3 md:pb-6 font-normal text-gray-700 hidden md:block px-3 md:px-6">{event.description}</p>
-    {event.certificate && <a href={`${import.meta.env.BASE_URL}/${event.certificate}`} className="inline-flex items-center ms-3 md:ms-6 mb-3 md:mb-6 px-3 py-2 text-sm font-medium text-center text-white bg-primary-700 rounded-lg hover:bg-primary-800 focus:ring-4 focus:outline-none focus:ring-primary-300">
+    {event.certificate && <a target="_blank" href={`${import.meta.env.BASE_URL}/${event.certificate}`} className="inline-flex items-center ms-3 md:ms-6 mb-3 md:mb-6 px-3 py-2 text-sm font-medium text-center text-white bg-primary-700 rounded-lg hover:bg-primary-800 focus:ring-4 focus:outline-none focus:ring-primary-300">
         Certificate
         <svg className="rtl:rotate-180 w-3.5 h-3.5 ms-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
             <path stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M1 5h12m0 0L9 1m4 4L9 9" />

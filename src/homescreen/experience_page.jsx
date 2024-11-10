@@ -8,24 +8,28 @@ function ExperiencePage() {
             "date": "June 2024 - Nov 2024",
             "company": "CorpStage",
             "certificate": "certificates/corpstage.pdf",
+            "lor": "certificates/plor_corpstage.pdf",
             "description": "Led end-to-end recruitment processes, including sourcing, screening, and onboarding top talent. Developed and implemented effective performance evaluation systems to foster employee growth, spearheaded a university relations initiative, successfully connecting with over 300 in the USA and establishing potential collaborations between universities in North America and South Asia. Recognized as a recommended speaker at the UNDP Movers Program for sharing expertise in business integrity and leadership skills."
         },
         {
             "title": "HR Intern",
             "date": "April 2024 - June 2024",
             "company": "Child Rights and You - CRY",
+            "certificate": "certificates/cry.pdf",
             "description": "Enhanced the onboarding experience for new team members, upholding CRY's core values of Dignity, Equality, Justice, and Integrity. Collaborated with a mentor to create a personalized work plan for strategic talent acquisition and actively participated in attracting top talent initiatives. Conducted in-depth research on child labour, child marriage, child trafficking, and anaemia to support CRY's advocacy efforts. Developed and presented key initiatives for Environment Day, including the CRY Treasure Hunt, Community Canvas and Upcycled Masterpieces."
         },
         {
             "title": "HR Strategy and Engagement Intern",
             "date": "Nov 2023 - June 2024",
             "company": "Global Community Of Domain Experts G-CODE",
+            "certificate": "certificates/gcode.pdf",
             "description": "Developed and implemented a comprehensive HR strategy to build a thriving talent community for G-CODE. Led the 'G-Code Brand Spark' campaign, successfully attracting and onboarding Subject Matter Experts (SMEs) to the platform. Created targeted market strategies for the 'Intern Get Intern' initiative, effectively boosting intern recruitment and raising program visibility, resulting in heightened engagement within the G-CODE community."
         },
         {
             "title": "Student HR Coordinator",
             "date": "Dec 2022 - May 2024",
             "company": "New Horizon College Of Engineering - NHCE",
+            "lor": "certificates/plor_gcode.pdf",
             "description": "Cultivated an inclusive campus environment through diverse recruitment opportunities and elevated student engagement, enhancing placement success. Coordinated HR events and campus drives for industry leaders such as BOSCH, and spearheaded creative projects for companies like Cisco, Oracle, and Merck. Managed teams for the NASSCOM Foundation's Global Inclusion Summit, as well as the NasTech and NASSCOM Design and Engineering Summit, and led various HR initiatives."
         }
     ]
@@ -37,7 +41,7 @@ function ExperiencePage() {
             <div className="ms-5 mt-16">
                 <ol className="relative border-s border-gray-200" id="experiences-list">
                     {data.map((experience) => {
-                        return <ExperienceComponent key={experience.title} title={experience.title} date={experience.date} company={experience.date} description={experience.description} url={experience.certificate}></ExperienceComponent>
+                        return <ExperienceComponent key={experience.title} title={experience.title} date={experience.date} company={experience.date} description={experience.description} url={experience.certificate} lor={experience.lor}></ExperienceComponent>
                     })}
                 </ol>
             </div>
@@ -48,7 +52,7 @@ function ExperiencePage() {
 
 function ExperienceComponent(props) {
 
-    const { title, date, company, description, url } = props;
+    const { title, date, company, description, url, lor } = props;
 
     const [collapse, setCollapse] = useState(true);
 
@@ -74,11 +78,17 @@ function ExperienceComponent(props) {
                 }
             </label>
         </div>
-        {url && <a href={`${import.meta.env.BASE_URL}${url}`} className="inline-flex items-center px-4 py-2 text-sm font-medium text-gray-900 bg-primary-200 border border-primary-200 hover:border-primary-500 rounded-lg hover:bg-white hover:text-primary-700 focus:z-10 focus:ring-4 focus:outline-none focus:ring-gray-100 focus:text-primary-700">
+        {url && <a target="_blank" href={`${import.meta.env.BASE_URL}${url}`} className="inline-flex items-center px-4 py-2 text-sm font-medium text-gray-900 bg-primary-200 border border-primary-200 hover:border-primary-500 rounded-lg hover:bg-white hover:text-primary-700 focus:z-10 focus:ring-4 focus:outline-none focus:ring-gray-100 focus:text-primary-700">
             <svg className="w-3.5 h-3.5 me-2.5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
                 <path d="M14.707 7.793a1 1 0 0 0-1.414 0L11 10.086V1.5a1 1 0 0 0-2 0v8.586L6.707 7.793a1 1 0 1 0-1.414 1.414l4 4a1 1 0 0 0 1.416 0l4-4a1 1 0 0 0-.002-1.414Z" />
                 <path d="M18 12h-2.55l-2.975 2.975a3.5 3.5 0 0 1-4.95 0L4.55 12H2a2 2 0 0 0-2 2v4a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2v-4a2 2 0 0 0-2-2Zm-3 5a1 1 0 1 1 0-2 1 1 0 0 1 0 2Z" />
             </svg>Certificate
+        </a>}
+        {lor && <a target="_blank" href={`${import.meta.env.BASE_URL}${url}`} className="inline-flex items-center px-4 py-2 ms-3 text-sm font-medium text-gray-900 bg-primary-200 border border-primary-200 hover:border-primary-500 rounded-lg hover:bg-white hover:text-primary-700 focus:z-10 focus:ring-4 focus:outline-none focus:ring-gray-100 focus:text-primary-700">
+            <svg className="w-3.5 h-3.5 me-2.5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
+                <path d="M14.707 7.793a1 1 0 0 0-1.414 0L11 10.086V1.5a1 1 0 0 0-2 0v8.586L6.707 7.793a1 1 0 1 0-1.414 1.414l4 4a1 1 0 0 0 1.416 0l4-4a1 1 0 0 0-.002-1.414Z" />
+                <path d="M18 12h-2.55l-2.975 2.975a3.5 3.5 0 0 1-4.95 0L4.55 12H2a2 2 0 0 0-2 2v4a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2v-4a2 2 0 0 0-2-2Zm-3 5a1 1 0 1 1 0-2 1 1 0 0 1 0 2Z" />
+            </svg>LOR
         </a>}
     </li>;
 }
