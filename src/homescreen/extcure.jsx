@@ -66,7 +66,7 @@ export default function Extracurricular() {
   ]
 
   return (
-    <div className="max-w-screen-2xl flex mx-auto p-8">
+    <div className="max-w-screen-2xl flex mx-auto p-4 md:p-8">
         <div className="">
             <h1 className="text-5xl font-semibold mb-6">Extra-curricular</h1>
             <div className="">

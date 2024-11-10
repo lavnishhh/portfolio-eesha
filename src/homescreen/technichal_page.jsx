@@ -13,6 +13,18 @@ function TechnicalPage() {
 
     const skills = {
         "technical": ["C/C++", "Java", "Python", "Operating systems", "Networking", "Data Analysis and Algorithms", "Big Data"],
+        "soft" : [
+            "Networking",
+            "Civic Literacy",
+            "Data-Driven Decision Maker",
+            "Articulate Presentation Skills",
+            "Astute Skills",
+            "Strategic Thinking",
+            "Teamwork and Collaboration",
+            "Ethical Decision Making",
+            "Risk Management",
+            "Public Relations"
+        ],        
         "certifications": [
             {
                 "title": "Network Addressing & Basic Troubleshooting",
@@ -33,15 +45,12 @@ function TechnicalPage() {
     }
 
     return <>
-        <div className="max-w-screen-2xl flex mx-auto p-8">
+        <div className="max-w-screen-2xl flex mx-auto p-4 md:p-8">
             <div className="">
-                <div className="grid grid-cols-1 gap-y-10 md:grid-cols-2">
-                    <div className="row-span-2">
-                        <h1 className="text-5xl font-semibold mb-6 inline-flex items-center text-center">
-                            Projects
-                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="h-10 w-10">
-                                <path strokeLinecap="round" strokeLinejoin="round" d="M19.5 14.25v-2.625a3.375 3.375 0 0 0-3.375-3.375h-1.5A1.125 1.125 0 0 1 13.5 7.125v-1.5a3.375 3.375 0 0 0-3.375-3.375H8.25m0 8.25.22-.22a.75.75 0 0 1 1.28.53v6.441c0 .472.214.934.64 1.137a3.75 3.75 0 0 0 4.994-1.77c.205-.428-.152-.868-.627-.868h-.507m-6-2.25h7.5M10.5 2.25H5.625c-.621 0-1.125.504-1.125 1.125v17.25c0 .621.504 1.125 1.125 1.125h12.75c.621 0 1.125-.504 1.125-1.125V11.25a9 9 0 0 0-9-9Z" />
-                            </svg>
+                <div className="md:grid grid-cols-1 gap-y-10 md:grid-cols-2">
+                    <div className="col-span-1 mt-10">
+                        <h1 className="text-5xl font-semibold mb-6">
+                            Technical Projects
                         </h1>
                         <div className="grid grid-cols-1 gap-4">
                             {
@@ -51,14 +60,11 @@ function TechnicalPage() {
                             }
                         </div>
                     </div>
-                    <div className="col-span-1">
-                        <h1 className="text-5xl font-semibold mb-6 inline-flex items-center text-center">
-                            Projects
-                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="size-10">
-                                <path strokeLinecap="round" strokeLinejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25H12" />
-                            </svg>
-
+                    <div className="col-span-1 mt-10">
+                        <h1 className="text-5xl font-semibold mb-6">
+                            Skills
                         </h1>
+                        <h2 className="text-xl">Technical</h2>
                         <div className="flex flex-wrap">
                             {
                                 skills.technical.map(skill => {
@@ -68,10 +74,20 @@ function TechnicalPage() {
                                 })
                             }
                         </div>
-                    </div>
-                    <div className="">
-                        <h1 className="text-5xl font-semibold mb-6">Certifications</h1>
+                        <h2 className="text-xl">Soft</h2>
                         <div className="flex flex-wrap">
+                            {
+                                skills.soft.map(skill => {
+                                    return <div key={skill} className="bg-primary-200 rounded-full p-3 m-2 hover:bg-white cursor-pointer border-primary-200 hover:border-primary-600 border">
+                                        {skill}
+                                    </div>
+                                })
+                            }
+                        </div>
+                    </div>
+                    <div className="col-span-2 mt-10">
+                        <h1 className="text-5xl font-semibold mb-6">Certifications</h1>
+                        <div className="flex flex-col md:flex-row flex-wrap">
                             {
                                 skills.certifications.map(certificate => {
                                     return <div key={certificate.title} className="bg-primary-200 p-3 m-2 hover:bg-white cursor-pointer border-primary-200 hover:border-primary-600 border border-dashed">
@@ -90,7 +106,7 @@ function TechnicalPage() {
                     </div>
                 </div>
             </div>
-        </div>;
+        </div>
     </>;
 }
 

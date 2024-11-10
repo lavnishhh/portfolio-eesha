@@ -35,7 +35,7 @@ function ExperiencePage() {
     ]
 
 
-    return <div className="max-w-screen-2xl flex mx-auto p-8">
+    return <div className="max-w-screen-2xl flex mx-auto p-4 md:p-8">
         <div>
             <h1 className="text-5xl font-semibold ">Professional Experiences</h1>
             <div className="ms-5 mt-16">
