@@ -6,7 +6,7 @@ function TechnicalPage() {
             'description': `Developed a web-based algorithm explorer using Java and JSP. Implemented BFS and DFS algorithms and created an interactive UI with HTML, CSS, and JavaScript to enhance user experience`
         },
         {
-            'title': 'DNADetection for E.COLI',
+            'title': 'DNA Detection for E.COLI',
             'description': `Created a DNA analysis system using machine learning classifiers. Preprocessed datasets and applied algorithms like KNN, Logistic Regression, and SVM, evaluating model performance through metrics such as accuracy and F1-score`
         }
     ]
@@ -24,24 +24,50 @@ function TechnicalPage() {
             "Ethical Decision Making",
             "Risk Management",
             "Public Relations"
-        ],        
+        ],
         "certifications": [
-            {
+              {
                 "title": "Network Addressing & Basic Troubleshooting",
                 "issuer": "Cisco | Netacad",
                 "certificate": "network_addressing"
-            },
-            {
+              },
+              {
                 "title": "Introduction to Cybersecurity",
                 "issuer": "Cisco | Netacad",
                 "certificate": "intro_cybersec"
-            },
-            {
+              },
+              {
                 "title": "Enterprise Design Thinking Practitioner",
                 "issuer": "IBM",
                 "certificate": "design_thinking"
-            },
-        ]
+              },
+              {
+                "title": "Enterprise Networking, Security and Automation",
+                "issuer": "Cisco | Netacad",
+                "certificate": "enterprise_networking"
+              },
+              {
+                "title": "HR Analytics",
+                "issuer": "Great Learning",
+                "certificate": "hr_analytics"
+              },
+              {
+                "title": "Human Resource Management",
+                "issuer": "Great Learning",
+                "certificate": "hr_management"
+              },
+              {
+                "title": "Switching, Routing, and Wireless Essentials",
+                "issuer": "Cisco | Netacad",
+                "certificate": "cisco"
+              },
+              {
+                "title": "Assessing and Mitigating Risks of Sexual Misconduct at WHO Country Offices and in Technical/Normative Programmes",
+                "issuer": "WHO",
+                "certificate": "who"
+              }
+            ]
+        
     }
 
     return <>

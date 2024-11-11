@@ -96,7 +96,7 @@ function ProjectsPage() {
         ,
             {
                 "title": "Fun Friday Program",
-                "image": "images/fun_friday.jpeg",
+                "image": "images/fun_friday.jpg",
                 "description": "Driving Performance Through Positive Culture: Led a strategic HR initiative to create a more engaged and productive workforce. The monthly program included team-building activities, knowledge-sharing sessions, and performance feedback. By fostering a positive work environment and promoting open communication, this initiative directly contributed to increased employee satisfaction, improved team performance, and achieved organizational goals."
             },
             {

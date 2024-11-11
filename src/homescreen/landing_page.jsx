@@ -6,7 +6,7 @@ function LandingPage() {
       <div className="text-5xl font-semibold mb-3">
         Hey there! I'm Eesha,
       </div>
-      <p>The definitive people person and a skilled networker with a knack for building relationships, I'm a data-driven storyteller who leverages insights to make strategic HR decisions. My journey is a quilt stitched with threads of experience. From leading recruitment drives for Fortune 500s to fostering diversity and inclusion and handling HR-related events, I've honed my skills in a vibrant tapestry of roles. My ambition is to pioneer a paradigm shift in HR, a world where <strong>people = organization</strong></p>
+      <p>the definitive people person and a skilled networker with a knack for building relationships, I'm a data-driven storyteller who leverages insights to make strategic HR decisions. My journey is a quilt stitched with threads of experience. From leading recruitment drives for Fortune 500s to fostering diversity and inclusion and handling HR-related events, I've honed my skills in a vibrant tapestry of roles. My ambition is to pioneer a paradigm shift in HR, a world where <strong>people = organization</strong>.</p>
     </div>
     <div className="flex items-center justify-center">
       <div className="grid grid-cols-2 gap-10">

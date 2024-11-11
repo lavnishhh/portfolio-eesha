@@ -40,6 +40,13 @@ export default function VolunteerScreen() {
             "title": "National Service Scheme (NSS)",
             "description": "Led tree plantation drives, fundraisers, and awareness campaigns on environmental sustainability and social responsibility.",
             "certificate": "volunteering/nss/certificate.pdf"
+        },
+        {
+            'title': "Government High School",
+            "description": "Government High School Doddabanahalli: Conducted storytelling and menstrual hygiene workshops for Children's Day as part of the IEEE CSR initiative with WIE and the Child Rights Foundation.",
+            "dir": "government",
+            "count": 2,
+            'ext': "jpg"
         }
     ]
 
@@ -87,7 +94,7 @@ function Carousel(props) {
     const { images, index } = props;
 
     return (<div id={`carousel-${index}`} className="relative w-full" data-carousel="slide">
-        <div className="relative h-56 overflow-hidden rounded-lg md:h-96">
+        <div className="relative h-56 overflow-hidden rounded-lg md:h-96 bg-black">
             {
                 Array(images.count).fill().map((_, index) => {
                     console.log(`${import.meta.env.BASE_URL}${images.dir}/${index}`)
@@ -98,11 +105,9 @@ function Carousel(props) {
             }
         </div>
         <div className="absolute z-30 hidden md:flex -translate-x-1/2 bottom-5 left-1/2 space-x-3 rtl:space-x-reverse">
-            <button type="button" className="w-3 h-3 rounded-full" aria-current="true" aria-label="Slide 1" data-carousel-slide-to={0} />
-            <button type="button" className="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 2" data-carousel-slide-to={1} />
-            <button type="button" className="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 3" data-carousel-slide-to={2} />
-            <button type="button" className="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 4" data-carousel-slide-to={3} />
-            <button type="button" className="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 5" data-carousel-slide-to={4} />
+            {Array(images.count).fill().map((_, index) => {
+                <button type="button" className="w-3 h-3 rounded-full" aria-current="true" aria-label={`Slide ${index+1}`} data-carousel-slide-to={index} />
+            })}
         </div>
         <button type="button" className="absolute top-0 start-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none" data-carousel-prev>
             <span className="inline-flex items-center justify-center w-10 h-10 rounded-full bg-primary-200 group-hover:bg-primary-200/50 group-focus:ring-4 group-focus:ring-white group-focus:outline-none">
