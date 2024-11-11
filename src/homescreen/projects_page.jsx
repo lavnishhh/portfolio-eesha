@@ -60,11 +60,13 @@ function ProjectsPage() {
             },
             {
                 "title": "CISCO - Skill-A-Thon",
+                "image": "images/cisco.jpg",
                 "description": "Spearheaded logistics and student participation for the Cisco 'Skill-A-Thon' event, enhancing brand awareness across engineering disciplines. Developed campaigns to foster engagement with Cisco's curriculum and Ideathon, promoting technology skills among future employees."
             },
             {
                 "title": "Oracle - TechDay",
-                "description": "Executed the Oracle Tech Day event for over 200 employees and NHCE students, coordinating a diverse program with sessions on 'GEN AI' and 'Importance of Storytelling.' Facilitated logistics for 14 international delegates and collaborated with the Oracle community."
+                "description": "Executed the Oracle Tech Day event for over 200 employees and NHCE students, coordinating a diverse program with sessions on 'GEN AI' and 'Importance of Storytelling.' Facilitated logistics for 14 international delegates and collaborated with the Oracle community.",
+                "image": "images/oracle_tech.jpg"
             }
         ,
             {

@@ -51,7 +51,7 @@ function LandingPage() {
           </a>
         </div>
         <div className="feature">
-          <p className="header">4</p>
+          <p className="header">8</p>
           <div>Certifications</div>
           <a className="text-primary-500 text-sm inline-flex items-center icon">
             Know more
@@ -61,7 +61,7 @@ function LandingPage() {
           </a>
         </div>
         <div className="feature">
-          <p className="header">3</p>
+          <p className="header">7</p>
           <div>Volunteer works</div>
           <a className="text-primary-500 text-sm inline-flex items-center icon">
             Know more

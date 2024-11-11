@@ -1706,11 +1706,6 @@ input:checked + .toggle-bg {
   background-color: rgb(185 225 189 / var(--tw-bg-opacity));
 }
 
-.bg-primary-300 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(138 203 148 / var(--tw-bg-opacity));
-}
-
 .bg-primary-700 {
   --tw-bg-opacity: 1;
   background-color: rgb(31 93 47 / var(--tw-bg-opacity));
@@ -1719,10 +1714,6 @@ input:checked + .toggle-bg {
 .bg-white {
   --tw-bg-opacity: 1;
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
-}
-
-.bg-white\/30 {
-  background-color: rgb(255 255 255 / 0.3);
 }
 
 .bg-white\/50 {
@@ -1771,10 +1762,6 @@ input:checked + .toggle-bg {
 
 .p-5 {
   padding: 1.25rem;
-}
-
-.p-8 {
-  padding: 2rem;
 }
 
 .px-2 {
@@ -2179,16 +2166,12 @@ input:checked + .toggle-bg {
   --tw-ring-color: rgb(138 203 148 / var(--tw-ring-opacity));
 }
 
-.group:hover .group-hover\:bg-white\/50 {
-  background-color: rgb(255 255 255 / 0.5);
-}
-
-.group:hover .group-hover\:bg-primary-400\/50 {
-  background-color: rgb(94 176 109 / 0.5);
-}
-
 .group:hover .group-hover\:bg-primary-200\/50 {
   background-color: rgb(185 225 189 / 0.5);
+}
+
+.group:hover .group-hover\:bg-white\/50 {
+  background-color: rgb(255 255 255 / 0.5);
 }
 
 .group:focus .group-focus\:outline-none {
@@ -2261,10 +2244,6 @@ input:checked + .toggle-bg {
   background-color: rgb(31 41 55 / var(--tw-bg-opacity));
 }
 
-.dark\:bg-gray-800\/30:is(.dark *) {
-  background-color: rgb(31 41 55 / 0.3);
-}
-
 .dark\:bg-gray-800\/50:is(.dark *) {
   background-color: rgb(31 41 55 / 0.5);
 }
@@ -2331,19 +2310,6 @@ input:checked + .toggle-bg {
 .dark\:hover\:text-white:hover:is(.dark *) {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
-}
-
-.group:hover .dark\:group-hover\:bg-gray-800\/60:is(.dark *) {
-  background-color: rgb(31 41 55 / 0.6);
-}
-
-.group:hover .dark\:group-hover\:bg-primary-400:is(.dark *) {
-  --tw-bg-opacity: 1;
-  background-color: rgb(94 176 109 / var(--tw-bg-opacity));
-}
-
-.group:focus .dark\:group-focus\:ring-gray-800\/70:is(.dark *) {
-  --tw-ring-color: rgb(31 41 55 / 0.7);
 }
 
 @media (min-width: 768px) {
