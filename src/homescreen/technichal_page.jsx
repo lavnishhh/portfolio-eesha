@@ -1,4 +1,4 @@
-function TechnicalPage() {
+function TechnicalPage(props) {
 
     const data = [
         {
@@ -70,8 +70,7 @@ function TechnicalPage() {
         
     }
 
-    return <>
-        <div className="max-w-screen-2xl flex mx-auto p-4 md:p-8">
+    return <div ref={props.refProp} className="max-w-screen-2xl flex mx-auto p-4 md:p-8">
             <div className="">
                 <div className="md:grid grid-cols-1 gap-y-10 md:grid-cols-2">
                     <div className="col-span-1 mt-10">
@@ -111,7 +110,7 @@ function TechnicalPage() {
                             }
                         </div>
                     </div>
-                    <div className="col-span-2 mt-10">
+                    <div className="col-span-2 pt-16" ref={props.refPropCert}>
                         <h1 className="text-5xl font-semibold mb-6">Certifications</h1>
                         <div className="flex flex-col md:flex-row flex-wrap">
                             {
@@ -132,8 +131,7 @@ function TechnicalPage() {
                     </div>
                 </div>
             </div>
-        </div>
-    </>;
+        </div>;
 }
 
 function ImageCard(props) {

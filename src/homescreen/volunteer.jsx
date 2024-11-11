@@ -1,6 +1,6 @@
 import React from 'react'
 
-export default function VolunteerScreen() {
+export default function VolunteerScreen(props) {
 
     const data = [
         {
@@ -52,7 +52,7 @@ export default function VolunteerScreen() {
 
 
     return (
-        <div className="max-w-screen-2xl flex mx-auto p-4 md:p-8">
+        <div className="max-w-screen-2xl flex mx-auto p-4 mt-10 md:p-8" ref={props.refProp}>
             <div>
                 <h1 className="text-5xl font-semibold ">Volunteering</h1>
                 <div className="columns-2 md:columns-3 xl:columns-4 gap-2 md:gap-6 mt-10">

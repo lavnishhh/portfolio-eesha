@@ -18,7 +18,7 @@ const InstagramEmbed = () => {
   );
 }
 
-export default function Extracurricular() {
+export default function Extracurricular(props) {
 
     const data = [
     {
@@ -66,11 +66,11 @@ export default function Extracurricular() {
   ]
 
   return (
-    <div className="max-w-screen-2xl flex mx-auto p-4 md:p-8">
+    <div ref={props.refProp} className="max-w-screen-2xl flex mx-auto mt-16 p-4 md:p-8">
         <div className="">
             <h1 className="text-5xl font-semibold mb-6">Extra-curricular</h1>
             <div className="">
-                <div className="columns-1 md:columns-3 2xl:columns-4 gap-2 md:gap-6">
+                <div className="columns-1 md:columns-2 xl:columns-3 2xl:columns-4 gap-2 md:gap-6">
                     {data.map((event) => {
                         return <ProjectCardComponent key={event.event} event={event}></ProjectCardComponent>
                     })}

@@ -1252,6 +1252,14 @@ input:checked + .toggle-bg {
   margin-top: 1.25rem;
 }
 
+.mt-4 {
+  margin-top: 1rem;
+}
+
+.mt-14 {
+  margin-top: 3.5rem;
+}
+
 .block {
   display: block;
 }
@@ -1830,6 +1838,18 @@ input:checked + .toggle-bg {
   padding-top: 0.75rem;
 }
 
+.pt-4 {
+  padding-top: 1rem;
+}
+
+.pt-10 {
+  padding-top: 2.5rem;
+}
+
+.pt-16 {
+  padding-top: 4rem;
+}
+
 .text-center {
   text-align: center;
 }
@@ -2346,6 +2366,11 @@ input:checked + .toggle-bg {
          columns: 3;
   }
 
+  .md\:columns-2 {
+    -moz-columns: 2;
+         columns: 2;
+  }
+
   .md\:grid-cols-2 {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
@@ -2385,6 +2410,11 @@ input:checked + .toggle-bg {
   .xl\:columns-4 {
     -moz-columns: 4;
          columns: 4;
+  }
+
+  .xl\:columns-3 {
+    -moz-columns: 3;
+         columns: 3;
   }
 }
 
