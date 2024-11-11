@@ -97,7 +97,7 @@ function Carousel(props) {
         <div className="relative h-56 overflow-hidden rounded-lg md:h-96 bg-black">
             {
                 Array(images.count).fill().map((_, index) => {
-                    console.log(`${import.meta.env.BASE_URL}${images.dir}/${index}`)
+                    console.log(`${import.meta.env.BASE_URL}${images.dir}/${index}.${images.ext}`)
                     return <div className="hidden duration-700 ease-in-out" key={index} data-carousel-item>
                         <img src={`${import.meta.env.BASE_URL}${images.dir}/${index}.${images.ext}`} className="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="..." />
                     </div>
