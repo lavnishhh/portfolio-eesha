@@ -1,4 +1,6 @@
+import { Carousel } from 'flowbite-react';
 import React from 'react'
+"use-client"
 
 export default function VolunteerScreen(props) {
 
@@ -84,47 +86,27 @@ function ProjectCardComponent(props) {
                 <path stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M1 5h12m0 0L9 1m4 4L9 9" />
             </svg>
         </a>}
-        {event.count > 0 && <Carousel key={index} index={index} images={{ 'dir': `volunteering/${event.dir}`, 'count': event.count, 'ext': event.ext }}></Carousel>}
+        {event.count > 0 && <CarouselComponent key={index} index={index} images={{ 'dir': `volunteering/${event.dir}`, 'count': event.count, 'ext': event.ext }}></CarouselComponent>}
     </div>;
 }
 
 
-function Carousel(props) {
+function CarouselComponent(props) {
 
     const { images, index } = props;
 
-    return (<div id={`carousel-${index}`} className="relative w-full" data-carousel="slide">
-        <div className="relative h-56 overflow-hidden rounded-lg md:h-96 bg-black">
-            {
-                Array(images.count).fill().map((_, index) => {
-                    console.log(`${import.meta.env.BASE_URL}${images.dir}/${index}.${images.ext}`)
-                    return <div className="hidden duration-700 ease-in-out" key={index} data-carousel-item>
-                        <img src={`${import.meta.env.BASE_URL}${images.dir}/${index}.${images.ext}`} className="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="..." />
-                    </div>
-                })
-            }
+    console.log(images)
+
+    return (
+        <div className="h-56 sm:h-64 xl:h-80 2xl:h-96">
+            <Carousel>
+                {
+                    Array(images.count).fill().map((_, index) => {
+                        console.log(`${import.meta.env.BASE_URL}${images.dir}/${index}.${images.ext}`)
+                        return <img src={`${import.meta.env.BASE_URL}${images.dir}/${index}.${images.ext}`} alt="..." />
+                    })
+                }
+            </Carousel>
         </div>
-        <div className="absolute z-30 hidden md:flex -translate-x-1/2 bottom-5 left-1/2 space-x-3 rtl:space-x-reverse">
-            {Array(images.count).fill().map((_, index) => {
-                <button type="button" className="w-3 h-3 rounded-full" aria-current="true" aria-label={`Slide ${index+1}`} data-carousel-slide-to={index} />
-            })}
-        </div>
-        <button type="button" className="absolute top-0 start-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none" data-carousel-prev>
-            <span className="inline-flex items-center justify-center w-10 h-10 rounded-full bg-primary-200 group-hover:bg-primary-200/50 group-focus:ring-4 group-focus:ring-white group-focus:outline-none">
-                <svg className="w-4 h-4 text-white dark:text-gray-800 rtl:rotate-180" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
-                    <path stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 1 1 5l4 4" />
-                </svg>
-                <span className="sr-only">Previous</span>
-            </span>
-        </button>
-        <button type="button" className="absolute top-0 end-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none" data-carousel-next>
-            <span className="inline-flex items-center justify-center w-10 h-10 rounded-full bg-primary-200 group-hover:bg-white/50 group-focus:ring-4 group-focus:ring-white group-focus:outline-none">
-                <svg className="w-4 h-4 text-white dark:text-gray-800 rtl:rotate-180" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
-                    <path stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="m1 9 4-4-4-4" />
-                </svg>
-                <span className="sr-only">Next</span>
-            </span>
-        </button>
-    </div>
     );
 }
