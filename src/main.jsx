@@ -6,7 +6,7 @@ import {
 } from "react-router-dom";
 import "./index.css";
 import HomeScreen from './homescreen/home_screen.jsx';
-import 'flowbite/dist/flowbite.min.js';
+import 'flowbite'
 
 const router = createBrowserRouter([
   {
