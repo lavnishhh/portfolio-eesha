@@ -1024,6 +1024,10 @@ input[type="range"]::-ms-fill-lower {
   pointer-events: none;
 }
 
+.visible {
+  visibility: visible;
+}
+
 .invisible {
   visibility: hidden;
 }
@@ -1212,6 +1216,10 @@ input[type="range"]::-ms-fill-lower {
 
 .z-auto {
   z-index: auto;
+}
+
+.-z-50 {
+  z-index: -50;
 }
 
 .col-span-1 {
@@ -1821,6 +1829,10 @@ input[type="range"]::-ms-fill-lower {
 
 .cursor-wait {
   cursor: wait;
+}
+
+.resize {
+  resize: both;
 }
 
 .snap-x {

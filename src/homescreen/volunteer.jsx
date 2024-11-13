@@ -73,8 +73,6 @@ function ProjectCardComponent(props) {
 
     const { event, index } = props;
 
-    console.log(event)
-
     return <div className="mb-2 md:mb-8 block bg-primary-200 max-w-sm border border-gray-200 rounded-lg shadow break-inside-avoid">
         {event.image && <img className="rounded-t-lg bg-black w-full hidden md:block" src={`${import.meta.env.BASE_URL}${event.image}`}></img>}
         {event.embed && event.embed}
@@ -95,15 +93,12 @@ function CarouselComponent(props) {
 
     const { images, index } = props;
 
-    console.log(images)
-
     return (
         <div className="h-56 sm:h-64 xl:h-80 2xl:h-96">
             <Carousel>
                 {
                     Array(images.count).fill().map((_, index) => {
-                        console.log(`${import.meta.env.BASE_URL}${images.dir}/${index}.${images.ext}`)
-                        return <img src={`${import.meta.env.BASE_URL}${images.dir}/${index}.${images.ext}`} alt="..." />
+                        return <img key={`img_${index}`} src={`${import.meta.env.BASE_URL}${images.dir}/${index}.${images.ext}`} alt="..." />
                     })
                 }
             </Carousel>
