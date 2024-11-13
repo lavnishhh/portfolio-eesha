@@ -13,7 +13,7 @@ const router = createBrowserRouter([
     path: "/",
     element: <HomeScreen></HomeScreen>,
   },
-], { basename: "/portfolio-eesha" });
+],);
 
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
