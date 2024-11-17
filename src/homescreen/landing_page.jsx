@@ -8,7 +8,7 @@ function LandingPage({ callback }) {
         Hey there! I'm Eesha,
       </div>
       <p>
-      Human Resources is the art of human connection, a catalyst for change, the language of empathy and the key to unity. It bridges the gap between technology and humanity. As a data-driven HR leader, I’m committed to crafting innovative strategies that align human values with organizational aspirations. My vision is to drive a transformative shift in the field, fostering a people-centric culture where every individual feels valued, respected and empowered. My goal is to build a future where <span className='font-bold italic'>people = organization</span>, inspiring exponential growth, radical innovation and enduring success at every level.
+      as a data-driven HR leader, I'm committed to crafting innovative strategies that align human values with organizational aspirations. My vision is to drive a transformative shift in the field, fostering a people-centric culture where every individual feels valued, respected, and empowered. I aim to build a future where <span className='font-bold italic'>People = Organization</span>, inspiring exponential growth, radical innovation and enduring success at every level.
       </p>
     </div>
     <div className="flex items-center justify-center">
