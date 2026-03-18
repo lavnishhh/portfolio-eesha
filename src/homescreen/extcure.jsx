@@ -22,6 +22,31 @@ export default function Extracurricular(props) {
 
     const data = [
     {
+      "title": "Volunteer",
+      "event": "SPCA",
+      "image": "spca.jpeg"
+    },
+    {
+      "title": "Academic Student Representative, Faculty of Business, Economics and Law",
+      "event": "AUT Business School",
+      "image": "aut.jpeg"
+    },
+    {
+      "title": "Co - Director of Events",
+      "event": "AUT Women in Business",
+      "image": "autwib.jpeg"
+    },
+    {
+      "title": "Director of Academics",
+      "event": "AUT Investment Club",
+      "image": "autic.jpeg"
+    },
+    {
+      "title": "ISTE Best Student Award (2025), State - level award for leadership and academic excellence",
+      "event": "ISTE: Indian Society for Technical Education",
+      "image": "iste.jpeg"
+    },
+    {
       "title": "Event Team Lead",
       "event": "TEDxNHCE",
       "image": "tedxnhce.png"
